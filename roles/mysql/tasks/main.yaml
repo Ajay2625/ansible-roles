@@ -1,6 +1,6 @@
 - name: installing pymysql and cryptography
   ansible.builtin.pip:
-    name: { { item } }
+    name: "{{ item }}"
     executable: pip3.9
     state: present
   loop:
@@ -20,9 +20,9 @@
 
 - name: connect to mysql server
   community.mysql.mysql_info:
-    login_user: { { USERNAME } }
-    login_password: { { PASSWORD } }
-    login_host: { { HOST_NAME } }
+    login_user: "{{ USERNAME }}"
+    login_password: "{{ PASSWORD }}"
+    login_host: "{{ HOST_NAME }}"
   register: mysql_info
   ignore_errors: true
 
