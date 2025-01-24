@@ -1,5 +1,5 @@
 USERNAME: root
 PASSWORD: ExpenseApp@1
-MYSQL_HOST: mysql.ajayajay.com
+MYSQL_HOST: 172.31.82.146
 APP_LOCATION: /etc/systemd/system/backend.service
 COMPONENT: backend
