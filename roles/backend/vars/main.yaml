@@ -1,3 +1,4 @@
 USERNAME: root
 PASSWORD: ExpenseApp@1
-HOST_NAME: 172.31.81.226
+MYSQL_HOST: 172.31.81.226
+APP_LOCATION: /etc/systemd/system/backend.service
