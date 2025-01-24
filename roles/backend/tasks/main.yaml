@@ -23,7 +23,7 @@
 
 - name: install dependencies
   community.general.npm:
-    path: /app
+    path: "{{ APP_LOCATION }}"
 
 - name: copy backend service
   ansible.builtin.template:
