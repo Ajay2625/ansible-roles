@@ -21,7 +21,7 @@
 - name: connect to mysql server
   community.mysql.mysql_info:
     login_user: "{{ USERNAME }}"
-    login_password: "{{ roles/mysql/vars/vault.yaml }}"
+    login_password: "{{ mysql_root_password }}"
     login_host: "{{ HOST_NAME }}"
   register: mysql_info
   ignore_errors: true
