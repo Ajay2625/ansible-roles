@@ -1,7 +1,5 @@
 - name: configure mysql server
   hosts: database
   become: true
-  vars_files:
-    - roles/mysql/vars/vault
   roles:
     - mysql
